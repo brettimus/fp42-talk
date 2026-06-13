@@ -2,6 +2,21 @@
 
 This repo is a Slidev presentation for the FP42 talk. It is based on the previous Codex talk structure, with local issue tracking handled by fp.
 
+## Design language (read before any slide/styling work)
+
+The deck has a deliberate visual identity — a **light, engineering-notebook aesthetic**
+synthesized from fiberplane.com and fp.dev (Geist + Geist Mono, off-white graph-paper
+canvas, black ink, one electric-blue accent, hairline cards, mono kickers, pixel-square
+clusters). The authoritative style bible lives at **`docs/design-language.md`** and is
+implemented in `style.css`.
+
+Before adding or restyling slides, read it and stay inside it — match the tokens, the
+typographic scale, the motifs, and the anti-goals. If a change needs to break from the
+bible, update `docs/design-language.md` in the same change so the doc and the deck never
+drift apart.
+
+@docs/design-language.md
+
 ## fp workflow
 
 @FP_CLAUDE.md
