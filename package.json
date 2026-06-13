@@ -22,5 +22,8 @@
   },
   "dependencies": {
     "qrcode": "^1.5.4"
+  },
+  "patchedDependencies": {
+    "@vueuse/core@14.3.0": "patches/@vueuse%2Fcore@14.3.0.patch"
   }
 }
