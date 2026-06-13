@@ -1,0 +1,15 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "fp42-talk",
+	"compatibility_date": "2025-01-30",
+	"routes": [
+		{ "pattern": "fp42.boots.lol", "custom_domain": true }
+	],
+	"assets": {
+		"directory": "./dist",
+		"not_found_handling": "single-page-application"
+	},
+	"observability": {
+		"enabled": true
+	}
+}

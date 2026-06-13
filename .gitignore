@@ -1,0 +1,24 @@
+# Fiberplane local issue tracking — ignore everything except extensions
+.fp/*
+!.fp/extensions/
+
+.env
+.envrc
+
+# Codex user-specific config
+.codex/config.local.toml
+
+# Dependencies
+node_modules/
+
+# Slidev build output
+dist/
+
+# Bun
+bun.lockb
+
+# Wrangler generated types
+worker-configuration.d.ts
+
+# Wrangler local state
+.wrangler/
