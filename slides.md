@@ -9,35 +9,49 @@ drawings:
 transition: slide-left
 mdc: true
 canvasWidth: 840
+fonts:
+  sans: Geist
+  mono: Geist Mono
+  weights: '300,400,500,600,700'
+class: cover
 ---
 
 <style>
 @import './style.css';
 </style>
 
-<div class="h-full flex flex-col justify-center">
+<div class="pill mb-8">Issue tracking for coding agents</div>
 
 # FP42
 
-<div class="mt-6 text-2xl opacity-70">
-Talk outline in progress
+<div class="mt-5 text-2xl" style="color: var(--ink-mute); max-width: 30ch;">
+Keep coding agents on track. Talk outline in progress.
 </div>
 
+<div class="mt-10 flex items-center gap-3">
+  <div class="pixels">
+    <i></i><i></i><i class="lit"></i>
+    <i></i><i class="lit"></i><i></i>
+    <i class="lit"></i><i></i><i></i>
+  </div>
+  <span class="text-sm font-mono" style="color: var(--ink-faint);">fp42.boots.lol</span>
 </div>
 
-<div class="abs-br m-6 text-sm font-mono opacity-60">
+<div class="abs-br m-6 text-sm">
 Brett Beutell · @lastgoodhandle
 </div>
 
 ---
 
-# Working Frame
+<div class="kicker">01 — Working Frame</div>
+
+# Shaping the talk
 
 <div class="mt-8 space-y-2">
 
 <v-clicks>
 
-- Clarify the audience and promise
+- Clarify the audience and the promise
 - Turn Robert Bor notes into the spine of the talk
 - Decide which demos or artifacts carry the argument
 - Keep the first deployed version editable and disposable
@@ -48,13 +62,15 @@ Brett Beutell · @lastgoodhandle
 
 ---
 
-# Open Questions
+<div class="kicker">02 — Open Questions</div>
 
-<div class="mt-8 grid grid-cols-2 gap-5">
+# Four things to answer
+
+<div class="mt-7 grid grid-cols-2 gap-4">
 
 <div class="bg-blue-500/10 p-5">
 
-## Story
+### Story
 
 What should people remember two days later?
 
@@ -62,7 +78,7 @@ What should people remember two days later?
 
 <div class="bg-purple-500/10 p-5">
 
-## Proof
+### Proof
 
 What makes the claim feel earned?
 
@@ -70,7 +86,7 @@ What makes the claim feel earned?
 
 <div class="bg-green-500/10 p-5">
 
-## Demos
+### Demos
 
 What should happen live, and what should be captured?
 
@@ -78,7 +94,7 @@ What should happen live, and what should be captured?
 
 <div class="bg-orange-500/10 p-5">
 
-## Landing
+### Landing
 
 What action should the talk make easier?
 
@@ -87,10 +103,18 @@ What action should the talk make easier?
 </div>
 
 ---
-layout: center
+layout: default
+class: section
 ---
 
-<div class="text-4xl font-semibold tracking-tight leading-snug max-w-3xl text-center">
-Next step: paste in notes from the meeting with Robert Bor.
-</div>
+<div class="kicker">Next Step</div>
 
+# Paste in notes from the meeting with Robert Bor.
+
+<div class="mt-8">
+  <div class="pixels">
+    <i class="lit"></i><i></i><i></i>
+    <i></i><i class="lit"></i><i></i>
+    <i></i><i></i><i class="lit"></i>
+  </div>
+</div>
