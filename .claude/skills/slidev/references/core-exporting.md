@@ -9,15 +9,17 @@ Export presentations to PDF, PPTX, PNG, or Markdown.
 
 ## Browser Exporter
 
-Access at `http://localhost:3030/export`:
+The browser exporter is the recommended path for interactive manual exports.
+Access it at `http://localhost:3030/export`:
 - Select format and options
 - Preview and download
 
 ## CLI Export
 
-Requires playwright:
+CLI export to PDF, PPTX, PNG, or Markdown relies on Playwright rendering. Install
+`playwright-chromium` when export is needed:
 ```bash
-pnpm add -D playwright-chromium
+bun add -D playwright-chromium
 ```
 
 ### PDF Export
@@ -32,6 +34,10 @@ slidev export --output my-slides.pdf
 ```bash
 slidev export --format pptx
 ```
+
+PPTX exports slides as images, so slide text is not selectable. Presenter notes
+are conveyed per slide. In PPTX mode, `--with-clicks` is enabled by default; pass
+`--with-clicks false` to disable it.
 
 ### PNG Export
 

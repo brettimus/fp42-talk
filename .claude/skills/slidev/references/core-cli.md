@@ -33,6 +33,11 @@ slidev --remote mypassword
 slidev --base /talks/my-talk/
 ```
 
+The CLI package is `@slidev/cli`. Prefer local package scripts (`bun run dev`,
+`bun run build`, `bun run export`) in this repo. The official docs warn that
+plain `npx slidev` is usually not supported because the package name is
+`@slidev/cli`.
+
 ## Build
 
 ```bash
@@ -58,7 +63,7 @@ slidev build slides1.md slides2.md  # Multiple builds
 ## Export
 
 ```bash
-slidev export [entry]
+slidev export [...entry]
 ```
 
 Options:
@@ -75,6 +80,12 @@ Options:
 | `--wait-until` | networkidle | Wait condition |
 | `--omit-background` | false | Transparent background |
 | `--executable-path` | - | Browser path |
+
+Export supports multiple entries:
+
+```bash
+slidev export slides1.md slides2.md
+```
 
 Examples:
 ```bash

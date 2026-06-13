@@ -24,6 +24,30 @@ pnpm run dev          # Start dev server
 pnpm run export       # Export to PDF
 ```
 
+## FP42 Repo Workflow
+
+This repository already has Slidev installed locally. Prefer the package scripts:
+
+```bash
+bun run dev
+bun run build
+direnv exec . bun run deploy
+```
+
+For this talk, production verification is part of the expected workflow. After
+meaningful slide or styling changes, build and deploy to `https://fp42.boots.lol`,
+then inspect the deployed URL with `agent-browser`. A local dev-server check is
+useful for iteration, but it is not the final check.
+
+## Version Notes
+
+- Current repo CLI target: `@slidev/cli` 52.x.
+- If Slidev behavior seems surprising, check the local version with
+  `bunx slidev --version` and prefer the official Markdown docs at
+  `https://sli.dev/<path>.md`, for example `https://sli.dev/builtin/cli.md`.
+- The npm package is `@slidev/cli`; current docs warn that plain `npx slidev`
+  is usually not supported because the binary package name differs.
+
 ## Basic Syntax
 
 ```md

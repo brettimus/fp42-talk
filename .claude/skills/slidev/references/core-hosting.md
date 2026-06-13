@@ -15,6 +15,17 @@ slidev build
 
 Output: `dist/` folder (static SPA)
 
+For this repository, the production path is Cloudflare Workers static assets:
+
+```bash
+bun run build
+direnv exec . bun run deploy
+```
+
+The deployed URL is `https://fp42.boots.lol`. Verify the deployed site after
+meaningful changes because Cloudflare routing, asset serving, and refresh
+behavior are part of the presentation surface.
+
 ### Options
 
 ```bash
@@ -29,6 +40,8 @@ slidev build --without-notes           # Exclude notes
 ```bash
 slidev build slides1.md slides2.md
 ```
+
+Each input deck is generated into its own folder in the output directory.
 
 ## GitHub Pages
 
